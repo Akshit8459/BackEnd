@@ -1,0 +1,14 @@
+[2025-07-01T08:04:27.443Z] GET / - 304 - 24ms - IP: ::1
+[2025-07-01T08:04:27.474Z] GET /favicon.ico - 404 - 5ms - IP: ::1
+[2025-07-01T08:04:34.748Z] GET /student - 200 - 175ms - IP: ::1
+[2025-07-01T08:04:37.113Z] GET /student/search - 200 - 4ms - IP: ::1
+[2025-07-01T08:04:40.187Z] GET /student/alex%20welch - 200 - 42ms - IP: ::1
+[2025-07-01T08:04:44.722Z] GET /student/leah%20dach - 200 - 36ms - IP: ::1
+[2025-07-01T08:13:24.356Z] GET /student - 304 - 175ms - IP: ::1
+[2025-07-01T08:13:26.377Z] GET /student/search - 304 - 5ms - IP: ::1
+[2025-07-01T08:13:28.109Z] GET /student/search - 304 - 3ms - IP: ::1
+[2025-07-01T08:13:29.940Z] GET /student/search - 304 - 2ms - IP: ::1
+[2025-07-01T08:13:32.231Z] GET /student/search - 304 - 2ms - IP: ::1
+[2025-07-01T08:13:34.332Z] GET /student - 304 - 121ms - IP: ::1
+[2025-07-01T08:13:36.509Z] GET /student/search - 304 - 3ms - IP: ::1
+[2025-07-01T08:13:39.054Z] GET /student/search - 304 - 2ms - IP: ::1

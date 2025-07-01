@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Students</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f8;
+            padding: 40px;
+            margin: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #111827;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            max-width: 600px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px 0;
+            font-size: 1.05rem;
+        }
+        li strong {
+            color: #4F46E5;
+        }
+    </style>
+</head>
+<body>
+    <h1>All Students</h1>
+    <% students.forEach(s => { %>
+        <div class="card">
+            <ul>
+                <li><strong>Name:</strong> <%= s.name %></li>
+                <li><strong>Age:</strong> <%= s.age || 'Not Specified' %></li>
+                <li><strong>Email:</strong> <%= s.email %></li>
+                <li><strong>Contact:</strong> <%= s.phoneNumber || 'Not Specified' %></li>
+            </ul>
+        </div>
+    <% }) %>
+</body>
+</html>

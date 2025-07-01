@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Manager - Home</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to right, #eef2f3, #cfd9df);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            margin: 0;
+        }
+        h1 {
+            color: #222;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+        .nav {
+            display: flex;
+            gap: 30px;
+        }
+        .nav a {
+            padding: 12px 24px;
+            background-color: #4F46E5;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 500;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            background-color: #3730A3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Student Detail Manager</h1>
+    <div class="nav">
+        <a href="/student">View All Students</a>
+        <a href="/student/search">Find a Student</a>
+    </div>
+</body>
+</html>

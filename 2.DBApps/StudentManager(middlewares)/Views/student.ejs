@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f6f9;
+            padding: 40px;
+        }
+        .card {
+            max-width: 600px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 30px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 12px 0;
+            font-size: 1.1rem;
+        }
+        li strong {
+            color: #4F46E5;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <ul>
+            <li><strong>Name:</strong> <%= student.name %></li>
+            <li><strong>Age:</strong> <%= student.age || 'Not Specified' %></li>
+            <li><strong>Email:</strong> <%= student.email %></li>
+            <li><strong>Contact:</strong> <%= student.phoneNumber || 'Not Specified' %></li>
+        </ul>
+    </div>
+</body>
+</html>
