@@ -15,7 +15,7 @@ connect();
 //ejs setup
 app.set('view engine', 'ejs');
 const path = require('path');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'Views'));
 
 //routes
 app.get('/',(req,res)=>{res.render("Homepage");})
@@ -26,6 +26,6 @@ app.use('/users',userRoutes);
 const blogRoutes=require('./Routes/blogRoutes')
 app.use('/blogs',blogRoutes)
 
-app.listen(process.env.PORT,()=>{
+app.listen(process.env.PORT,'0.0.0.0',()=>{
     console.log(`server listening on port:${process.env.PORT}`)
 });
