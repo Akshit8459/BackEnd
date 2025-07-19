@@ -22,6 +22,12 @@ app.use('/users',userRoutes);
 const productRoutes=require('./Routes/productRoutes');
 app.use('/products',productRoutes);
 
+const orderRoutes=require('./Routes/orderRoutes')
+app.use('/orders',orderRoutes);
+
+const paymentRoutes=require('./Routes/paymentRoutes')
+app.use('/payments',paymentRoutes);
+
 app.get('/',(req,res)=>{
     res.send("HOMEPAGE");
 })
