@@ -9,6 +9,10 @@ app.use(cookieParser());
 app.use(express.urlencoded());
 app.use(express.json());
 
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
+
+
 
 //connection to DB
 const connectToMongo=require('./Database/connector');
