@@ -4,6 +4,8 @@ const fn=require('../Controllers/paymentControllers')
 const {auth}=require('../Middlewares/authentication')
 const authorise=require('../Middlewares/authorisation')
 
+router.post('/pay/:id',auth,authorise("ADMIN","SUPPORT"),fn.getPaymentGateway);
+router.get('/payment-success', fn.paymentSuccess);
 router.get('/',auth,authorise("ADMIN","SUPPORT"),fn.getAllPayments);
 router.get('/:id',auth,authorise("ADMIN","SUPPORT"),fn.getSinglePayment);
 

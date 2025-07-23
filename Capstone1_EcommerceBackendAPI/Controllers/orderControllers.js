@@ -24,7 +24,7 @@ exports.getAllOrders=async (req,res)=>{
                     <form action="/orders/${o._id}?_method=DELETE" method="POST">
                         <button class="delete">Cancel Order</button>
                     </form>
-                    <form action="/payments" method="GET">
+                    <form action="/payments/pay/${o._id}?_method=POST" method="POST">
                         <button class="update">Pay Now</button>
                     </form>
                     <form action="/orders/${o._id}" method="GET">
